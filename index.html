@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Number System Converter App</title>
+		<link rel="stylesheet" href="./reset.css" />
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<h2 class="title">Number System Converter</h2>
+		<main>
+			<div class="user-input">
+				<form id="form">
+					<select name="number system selecor" id="selection">
+						<option value="selectOne">Select</option>
+						<option value="Decimal">Decimal</option>
+						<option value="Binary">Binary</option>
+						<option value="Octal">Octal</option>
+						<option value="Hex">Hex</option>
+					</select>
+					<input
+						type="text"
+						name="inputField"
+						id="inputField"
+						placeholder="Type Any Number System Decimals...."
+						pattern="[a-zA-Z0-9]*"
+					/>
+				</form>
+				<div class="helper">*only Alphanumeric Combinations alwed,no Special Characters...</div>
+			</div>
+			<div class="result">
+				<div class="result-top">
+					<div class="result-box decimal">
+						<div id="decimalClass" class="name">Decimal</div>
+						<div id="decimalNumber" class="value">0</div>
+						<div id="copy" class="copy">copy</div>
+					</div>
+					<div class="result-box">
+						<div id="binaryClass" class="name">Binary</div>
+						<div id="binaryNumber" class="value">0</div>
+						<div id="copy" class="copy">copy</div>
+					</div>
+				</div>
+				<div class="result-bottom">
+					<div class="result-box">
+						<div id="octalClass" class="name">Octal</div>
+						<div id="octalNumber" class="value">0</div>
+						<div id="copy" class="copy">copy</div>
+					</div>
+					<div class="result-box">
+						<div id="hexClass" class="name">Hex</div>
+						<div id="hexNumber" class="value">0</div>
+						<div id="copy" class="copy">copy</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="./script.js"></script>
+	</body>
+</html>
